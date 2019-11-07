@@ -1,0 +1,10 @@
+E:\CuerosColombia\CuerosColombia\bin\CuerosColombia.dll
+E:\CuerosColombia\CuerosColombia\bin\CuerosColombia.pdb
+E:\CuerosColombia\CuerosColombia\obj\Debug\CuerosColombia.dll
+E:\CuerosColombia\CuerosColombia\obj\Debug\CuerosColombia.pdb
+E:\CuerosColombia\CuerosColombia\bin\Logica.dll
+E:\CuerosColombia\CuerosColombia\bin\Datos.dll
+E:\CuerosColombia\CuerosColombia\bin\Oracle.DataAccess.dll
+E:\CuerosColombia\CuerosColombia\bin\Logica.pdb
+E:\CuerosColombia\CuerosColombia\bin\Datos.pdb
+E:\CuerosColombia\CuerosColombia\obj\Debug\CuerosColombia.csprojResolveAssemblyReference.cache

@@ -1,0 +1,8 @@
+E:\CuerosColombia\Logica\bin\Debug\Logica.dll
+E:\CuerosColombia\Logica\bin\Debug\Logica.pdb
+E:\CuerosColombia\Logica\obj\Debug\Logica.dll
+E:\CuerosColombia\Logica\obj\Debug\Logica.pdb
+E:\CuerosColombia\Logica\bin\Debug\Datos.dll
+E:\CuerosColombia\Logica\bin\Debug\Oracle.DataAccess.dll
+E:\CuerosColombia\Logica\bin\Debug\Datos.pdb
+E:\CuerosColombia\Logica\obj\Debug\Logica.csprojResolveAssemblyReference.cache

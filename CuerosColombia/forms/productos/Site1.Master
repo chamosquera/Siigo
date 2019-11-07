@@ -1,0 +1,156 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="CuerosColombia.forms.productos.Site1" %>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cueros Colombia | Empty Page</title>
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../font-awesome/css/font-awesome.css" rel="stylesheet">
+    <!-- Toastr style -->
+    <link href="../../css/plugins/toastr/toastr.min.css" rel="stylesheet">
+    <!-- Gritter -->
+    <link href="../../js/plugins/gritter/jquery.gritter.css" rel="stylesheet">
+    <link href="../../css/animate.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet">
+    <%--/////////////////////////////////////////--%>
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="../../css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="../../css/animate.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../../img/fup/icon" />
+    <link href="../../css/plugins/dataTables/datatables.min.css" rel="stylesheet">
+</head>
+<body class="">
+    <div id="wrapper">
+        <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element">
+                        <img alt="image" class="rounded-circle" src="../../img/profile_small.jpg"/>
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="block m-t-xs font-bold">Emiro Mosquera</span>
+                            <span class="text-muted text-xs block">Programador <b class="caret"></b></span>
+                        </a>
+                        
+                    </div>
+                    <div class="logo-element">
+                        CCol
+                    </div>
+                </li>
+               
+                <li>
+                    <a href="../clientes/default.aspx"><i class="fa fa-users"></i> <span class="nav-label">Clientes</span></a>
+                </li>
+               <li>
+                    <a href="default.aspx"><i class="fa fa-diamond"></i> <span class="nav-label">Productos</span></a>
+                </li>
+                <li>
+                    <a href=""><i class="fa fa-diamond"></i> <span class="nav-label">Facturas</span></a>
+                </li>
+                <li>
+                    <a href="../parametrizacion/carga.aspx"><i class="fa fa-diamond"></i> <span class="nav-label">Carga</span></a>
+                </li>
+
+        </div>
+    </nav>
+        <div id="page-wrapper" class="gray-bg">
+            <div class="row border-bottom">
+                <nav class="navbar navbar-static-top  " role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+           
+        </div>
+            <ul class="nav navbar-top-links navbar-right">
+               
+                
+                <li>
+                    <a href="login.html">
+                        <i class="fa fa-sign-out"></i> Cerrar Sesión
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+            </div>
+            <div class="wrapper wrapper-content">
+                <%--<div class="middle-box text-center animated fadeInRightBig">
+                    <h3 class="font-bold">This is page content</h3>
+                    <div class="error-desc">
+                        You can create here any grid layout you want. And any variation layout you imagine:) Check out
+                        main dashboard and other site. It use many different layout.
+                        <br/><a href="index.html" class="btn btn-primary m-t">Dashboard</a>
+                    </div>
+                </div>--%>
+                <form id="form1" runat="server">
+                <div>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                </form>
+            </div>
+            <div class="footer">
+                <div>
+                    <strong>Copyright</strong> Siigo Company &copy; 2019
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Mainly scripts -->
+    <script src="../../js/jquery-3.1.1.min.js"></script>
+    <script src="../../js/popper.min.js"></script>
+    <script src="../../js/bootstrap.js"></script>
+    <script src="../../js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="../../js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <!-- Custom and plugin javascript -->
+    <script src="../../js/inspinia.js"></script>
+    <script src="../../js/plugins/pace/pace.min.js"></script>
+    <!-- iCheck -->
+    <script src="../../js/plugins/iCheck/icheck.min.js"></script>
+    <!-- Jasny -->
+    <script src="../../js/plugins/jasny/jasny-bootstrap.min.js"></script>
+    <!-- DROPZONE -->
+    <script src="../../js/plugins/dropzone/dropzone.js"></script>
+    <!-- CodeMirror -->
+    <script src="../../js/plugins/codemirror/codemirror.js"></script>
+    <script src="../../js/plugins/codemirror/mode/xml/xml.js"></script>
+    <%--//////////////////////////////////////--%>
+    <!-- jquery UI -->
+    <script src="../../js/plugins/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Touch Punch - Touch Event Support for jQuery UI -->
+    <script src="../../js/plugins/touchpunch/jquery.ui.touch-punch.min.js"></script>
+    <%--//////////////////--%>
+    <script src="../../js/plugins/dataTables/datatables.min.js"></script>
+    <script src="../../js/plugins/dataTables/dataTables.bootstrap4.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.dataTables-example').DataTable({
+                pageLength: 25,
+                responsive: true,
+                dom: '<"html5buttons"B>lTfgitp',
+                buttons: [
+                    { extend: 'copy' },
+                    { extend: 'csv' },
+                    { extend: 'excel', title: 'Reporte' },
+                    { extend: 'print',
+                        customize: function (win) {
+                            $(win.document.body).addClass('white-bg');
+                            $(win.document.body).css('font-size', '10px');
+
+                            $(win.document.body).find('table')
+                                    .addClass('compact')
+                                    .css('font-size', 'inherit');
+                        }
+                    }
+                ]
+
+            });
+
+        });
+
+    </script>
+</body>
+</html>
